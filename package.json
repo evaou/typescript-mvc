@@ -1,0 +1,24 @@
+{
+  "name": "typescript-mvc",
+  "version": "1.0.0",
+  "description": "## Setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evaou/typescript-mvc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evaou/typescript-mvc/issues"
+  },
+  "homepage": "https://github.com/evaou/typescript-mvc#readme",
+  "dependencies": {
+    "@types/typescript": "^2.0.0",
+    "typescript": "^4.0.3"
+  }
+}
