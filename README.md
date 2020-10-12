@@ -12,5 +12,5 @@
 - tsconfig.json
 
     ```
-    $ tst --init
+    $ tsc --init
     ```
