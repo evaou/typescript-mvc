@@ -1,29 +1,13 @@
-import * as Hapi from "hapi";
+import * as hapi from "hapi";
 import settings from "./settings";
+import * as routes from "./lib/routes";
 
-const server: Hapi.Server = new Hapi.Server({
+const server: hapi.Server = new hapi.Server({
   host: settings.host,
   port: settings.port,
 });
 
-server.route({
-  method: "GET",
-  path: "/",
-  handler: (request: Hapi.Request, h: Hapi.ResponseToolkit) =>
-    "This is the GET route.",
-});
-
-server.route({
-  method: "POST",
-  path: "/",
-  handler: (request: Hapi.Request, h: Hapi.ResponseToolkit) => {
-    return {
-      message:
-        "This is the POST route, the data you sent is attached to this response",
-      data: request.payload,
-    };
-  },
-});
+server.route(routes.default);
 
 async function start() {
   try {
