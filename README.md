@@ -4,13 +4,34 @@
 
 - package.json
 
-    ```
-    $ npm init -y
-    $ npm install --save typescript @types/typescript
-    ```
+  ```
+  $ npm init -y
+  $ npm install typescript @types/typescript
+  ```
 
 - tsconfig.json
 
-    ```
-    $ tsc --init
-    ```
+  ```
+  {
+    "compilerOptions": {
+      "outDir": "./build",
+      "lib": ["es5", "es6"],
+      "module": "commonjs",
+      "target": "es6",
+      "sourceMap": true
+      },
+    "exclude": ["node_modules"]
+  }
+  ```
+
+- hapi
+
+  ```
+  $ npm install hapi @types/hapi
+  ```
+
+- dotenv
+
+  ```
+  $ npm install dotenv @types/dotenv
+  ```
